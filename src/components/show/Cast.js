@@ -11,7 +11,9 @@ const Cast = ({ cast }) => {
           </div>
 
           <div className="actor">
-            {person.name} | {character.name} {voice && '| Voiceover'}
+            <span>
+              <span className='bold'>{person.name}</span>| {character.name} {voice && '| Voiceover'}
+            </span>
           </div>
         </div>
       ))}
